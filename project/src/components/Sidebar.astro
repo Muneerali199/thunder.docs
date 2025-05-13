@@ -1,0 +1,171 @@
+---
+import { ChevronDown, ChevronRight } from 'lucide-astro';
+
+interface Props {
+  currentPath: string;
+}
+
+const { currentPath } = Astro.props;
+
+const navItems = [
+  {
+    title: 'Building with Thunder',
+    links: [
+      { title: 'Welcome', href: '/' },
+      { title: 'Get started with Thunder', href: '/getting-started' },
+      { title: 'Getting Started Guide', href: '/getting-started/guide' },
+      { title: 'Introduction to Thunder concepts', href: '/getting-started/concepts' },
+    ],
+  },
+  {
+    title: 'Using Thunder',
+    links: [
+      { title: 'Supported Technologies', href: '/using/technologies' },
+      { title: 'Tutorials', href: '/using/tutorials' },
+      { title: 'Database', href: '/using/database' },
+      { title: 'Authentication', href: '/using/authentication' },
+      { title: 'Deploy', href: '/using/deploy' },
+    ],
+  },
+  {
+    title: 'Best practices',
+    links: [
+      { title: 'Overview', href: '/best-practices' },
+      { title: 'In-app help with discussion mode', href: '/best-practices/discussion-mode' },
+      { title: 'Maximize token efficiency', href: '/best-practices/token-efficiency' },
+      { title: 'Prompt effectively', href: '/best-practices/prompting' },
+    ],
+  },
+  {
+    title: 'Using Thunder with other tools',
+    links: [
+      { title: 'Overview', href: '/integrations' },
+      { title: 'Figma for design', href: '/integrations/figma' },
+      { title: 'Supabase for databases', href: '/integrations/supabase' },
+      { title: 'Stripe for payment', href: '/integrations/stripe' },
+      { title: 'Netlify for hosting', href: '/integrations/netlify' },
+      { title: 'Expo for mobile apps', href: '/integrations/expo' },
+      { title: 'GitHub for version control', href: '/integrations/github' },
+      { title: 'Import from Lovable', href: '/integrations/lovable' },
+    ],
+  },
+  {
+    title: 'Accounts and subscriptions',
+    links: [
+      { title: 'Overview', href: '/accounts' },
+      { title: 'Billing', href: '/accounts/billing' },
+      { title: 'Tokens', href: '/accounts/tokens' },
+      { title: 'Accounts', href: '/accounts/management' },
+      { title: 'Teams plans', href: '/accounts/teams' },
+      { title: 'Corporate and commercial', href: '/accounts/corporate' },
+    ],
+  },
+  {
+    title: 'Troubleshooting',
+    links: [
+      { title: 'Overview', href: '/troubleshooting' },
+      { title: 'Issues', href: '/troubleshooting/issues' },
+    ],
+  },
+  {
+    title: 'Community and support',
+    links: [
+      { title: 'Overview', href: '/community' },
+      { title: 'Announcements', href: '/community/announcements' },
+      { title: 'Contact support', href: '/community/contact' },
+      { title: 'Community', href: '/community/join' },
+    ],
+  },
+];
+---
+
+<aside id="sidebar" class="fixed inset-y-0 left-0 z-30 hidden w-72 flex-none transform overflow-y-auto border-r border-gray-200 bg-white px-4 pt-16 pb-10 transition-all md:relative md:block">
+  <nav class="mt-6 flex flex-col">
+    {
+      navItems.map(category => (
+        <div class="mb-6">
+          <button class="sidebar-category group flex w-full items-center justify-between rounded-md px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100">
+            {category.title}
+            <ChevronDown size={16} class="sidebar-icon text-gray-400 transition-transform duration-200" />
+          </button>
+          <div class="sidebar-links mt-1 pl-4 space-y-1">
+            {category.links.map(link => (
+              <a 
+                href={link.href} 
+                class={`flex items-center rounded-md px-3 py-2 text-sm transition-colors ${currentPath === link.href ? 'bg-primary-50 text-primary-700 font-medium' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'}`}
+              >
+                {link.title}
+              </a>
+            ))}
+          </div>
+        </div>
+      ))
+    }
+  </nav>
+</aside>
+
+<button id="sidebar-overlay" class="fixed inset-0 z-20 hidden bg-gray-900/50 backdrop-blur-sm md:hidden"></button>
+
+<script>
+  // Mobile sidebar toggle
+  document.addEventListener('DOMContentLoaded', () => {
+    const sidebarOverlay = document.getElementById('sidebar-overlay');
+    const sidebar = document.getElementById('sidebar');
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    
+    // Toggle sidebar categories
+    const sidebarCategories = document.querySelectorAll('.sidebar-category');
+    
+    sidebarCategories.forEach(category => {
+      category.addEventListener('click', () => {
+        const links = category.nextElementSibling;
+        const icon = category.querySelector('.sidebar-icon');
+        
+        // Toggle links visibility
+        links.classList.toggle('hidden');
+        
+        // Rotate icon
+        if (links.classList.contains('hidden')) {
+          icon.style.transform = 'rotate(0deg)';
+        } else {
+          icon.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+    
+    // Show sidebar on mobile when menu button is clicked
+    if (mobileMenuButton && sidebar && sidebarOverlay) {
+      mobileMenuButton.addEventListener('click', () => {
+        sidebar.classList.toggle('translate-x-0');
+        sidebar.classList.toggle('hidden');
+        sidebarOverlay.classList.toggle('hidden');
+      });
+      
+      sidebarOverlay.addEventListener('click', () => {
+        sidebar.classList.add('hidden');
+        sidebar.classList.remove('translate-x-0');
+        sidebarOverlay.classList.add('hidden');
+      });
+    }
+  });
+</script>
+
+<style>
+  /* Ensure all categories are expanded by default */
+  .sidebar-links {
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    #sidebar {
+      width: 80%;
+      max-width: 320px;
+      transition: transform 0.3s ease-in-out;
+      transform: translateX(-100%);
+    }
+    
+    #sidebar.translate-x-0 {
+      transform: translateX(0);
+    }
+  }
+</style>

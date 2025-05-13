@@ -1,0 +1,64 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Welcome" currentPath="/">
+  <div class="prose max-w-none">
+    <h1>Building with Thunder</h1>
+    <p class="text-lg text-gray-700 mb-8">
+      Welcome to the Thunder support documentation. Here you'll find comprehensive guides and documentation to help you start working with Thunder as quickly as possible.
+    </p>
+    
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 mb-12">
+      <a href="/getting-started" class="group flex flex-col rounded-lg border border-gray-200 bg-white p-6 hover:border-primary-300 hover:shadow-md transition-all">
+        <h2 class="text-xl font-semibold text-gray-900 group-hover:text-primary-700 transition-colors">Getting Started</h2>
+        <p class="mt-2 text-gray-600">Learn the basics and get your first Thunder application up and running quickly.</p>
+      </a>
+      
+      <a href="/using/tutorials" class="group flex flex-col rounded-lg border border-gray-200 bg-white p-6 hover:border-primary-300 hover:shadow-md transition-all">
+        <h2 class="text-xl font-semibold text-gray-900 group-hover:text-primary-700 transition-colors">Tutorials</h2>
+        <p class="mt-2 text-gray-600">Step-by-step guides to help you build amazing applications with Thunder.</p>
+      </a>
+      
+      <a href="/best-practices" class="group flex flex-col rounded-lg border border-gray-200 bg-white p-6 hover:border-primary-300 hover:shadow-md transition-all">
+        <h2 class="text-xl font-semibold text-gray-900 group-hover:text-primary-700 transition-colors">Best Practices</h2>
+        <p class="mt-2 text-gray-600">Learn how to use Thunder effectively and efficiently for your projects.</p>
+      </a>
+      
+      <a href="/using/database" class="group flex flex-col rounded-lg border border-gray-200 bg-white p-6 hover:border-primary-300 hover:shadow-md transition-all">
+        <h2 class="text-xl font-semibold text-gray-900 group-hover:text-primary-700 transition-colors">Database</h2>
+        <p class="mt-2 text-gray-600">Everything you need to know about working with databases in Thunder.</p>
+      </a>
+      
+      <a href="/using/authentication" class="group flex flex-col rounded-lg border border-gray-200 bg-white p-6 hover:border-primary-300 hover:shadow-md transition-all">
+        <h2 class="text-xl font-semibold text-gray-900 group-hover:text-primary-700 transition-colors">Authentication</h2>
+        <p class="mt-2 text-gray-600">Set up secure authentication for your Thunder applications.</p>
+      </a>
+      
+      <a href="/using/deploy" class="group flex flex-col rounded-lg border border-gray-200 bg-white p-6 hover:border-primary-300 hover:shadow-md transition-all">
+        <h2 class="text-xl font-semibold text-gray-900 group-hover:text-primary-700 transition-colors">Deploy</h2>
+        <p class="mt-2 text-gray-600">Learn how to deploy your Thunder applications to production.</p>
+      </a>
+    </div>
+    
+    <h2>Latest Updates</h2>
+    <div class="bg-primary-50 border border-primary-200 rounded-lg p-6 mb-10">
+      <h3 class="text-lg font-medium text-primary-800 mb-2">Thunder 2.0 Released</h3>
+      <p class="text-primary-700 mb-4">
+        We're excited to announce Thunder 2.0 with improved performance, new features, and better integration options.
+      </p>
+      <a href="/community/announcements" class="inline-flex items-center text-primary-700 font-medium hover:text-primary-800">
+        Read the announcement
+        <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </a>
+    </div>
+    
+    <h2>Need Help?</h2>
+    <p>
+      Can't find what you're looking for? Check out our <a href="/troubleshooting">Troubleshooting guides</a> or 
+      <a href="/community/contact">contact our support team</a> for assistance.
+    </p>
+  </div>
+</Layout>

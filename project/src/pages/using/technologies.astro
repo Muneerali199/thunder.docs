@@ -1,0 +1,258 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Supported Technologies" currentPath="/using/technologies">
+  <div class="prose max-w-none">
+    <nav class="text-sm mb-8">
+      <ol class="flex items-center space-x-2">
+        <li>
+          <a href="/" class="text-gray-500 hover:text-gray-700">Home</a>
+        </li>
+        <li class="flex items-center space-x-2">
+          <svg class="h-4 w-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+          <span class="text-gray-900 font-medium">Supported Technologies</span>
+        </li>
+      </ol>
+    </nav>
+    
+    <h1>Supported Technologies</h1>
+    
+    <p class="text-lg text-gray-700 mb-8">
+      Thunder supports a wide range of modern web technologies and frameworks to help you build robust applications. Here's an overview of the technologies you can use with Thunder.
+    </p>
+    
+    <h2>Frameworks</h2>
+    
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 mb-8">
+      <div class="rounded-lg border border-gray-200 bg-white p-6">
+        <div class="flex items-center mb-4">
+          <svg class="h-8 w-8 text-blue-500" viewBox="0 0 24 24" fill="none">
+            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#61DAFB"/>
+            <path d="M12 16.5C14.4853 16.5 16.5 14.4853 16.5 12C16.5 9.51472 14.4853 7.5 12 7.5C9.51472 7.5 7.5 9.51472 7.5 12C7.5 14.4853 9.51472 16.5 12 16.5Z" fill="white"/>
+          </svg>
+          <h3 class="ml-2 text-lg font-medium text-gray-900">React</h3>
+        </div>
+        <p class="text-gray-600">Build interactive user interfaces with React, the popular JavaScript library for UI development.</p>
+      </div>
+      
+      <div class="rounded-lg border border-gray-200 bg-white p-6">
+        <div class="flex items-center mb-4">
+          <svg class="h-8 w-8 text-green-500" viewBox="0 0 24 24" fill="none">
+            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#41B883"/>
+            <path d="M17.2329 6H19.5L12 18L4.5 6H8.64399L12 11.5355L15.2988 6H17.2329Z" fill="white"/>
+          </svg>
+          <h3 class="ml-2 text-lg font-medium text-gray-900">Vue</h3>
+        </div>
+        <p class="text-gray-600">Create dynamic web interfaces with Vue, a progressive JavaScript framework.</p>
+      </div>
+      
+      <div class="rounded-lg border border-gray-200 bg-white p-6">
+        <div class="flex items-center mb-4">
+          <svg class="h-8 w-8 text-red-500" viewBox="0 0 24 24" fill="none">
+            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#DD0031"/>
+            <path d="M12 5.07L6.04 7.265L6.953 16.316L12 19.695L17.047 16.316L17.96 7.265L12 5.07Z" fill="white"/>
+          </svg>
+          <h3 class="ml-2 text-lg font-medium text-gray-900">Angular</h3>
+        </div>
+        <p class="text-gray-600">Build scalable web applications with Angular, a platform for building mobile and desktop web applications.</p>
+      </div>
+      
+      <div class="rounded-lg border border-gray-200 bg-white p-6">
+        <div class="flex items-center mb-4">
+          <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none">
+            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="black"/>
+            <path d="M8 19L17 5L9 5L4 19L8 19Z" fill="white"/>
+          </svg>
+          <h3 class="ml-2 text-lg font-medium text-gray-900">Next.js</h3>
+        </div>
+        <p class="text-gray-600">Create full-stack React applications with Next.js, featuring server-side rendering and static site generation.</p>
+      </div>
+      
+      <div class="rounded-lg border border-gray-200 bg-white p-6">
+        <div class="flex items-center mb-4">
+          <svg class="h-8 w-8 text-purple-500" viewBox="0 0 24 24" fill="none">
+            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#FF3E00"/>
+            <path d="M15.9138 8.15375C15.2634 7.17591 14.0916 6.65051 12.8387 6.86299L9.63129 7.42703C9.23161 7.51029 8.87033 7.7167 8.6157 8.01266C8.36107 8.30861 8.2274 8.68031 8.2391 9.0602V10.1422C8.2389 10.1854 8.24761 10.228 8.26465 10.2669C8.28169 10.3058 8.30667 10.3398 8.33764 10.3667C8.36861 10.3935 8.40478 10.4123 8.44318 10.422C8.48158 10.4317 8.52121 10.4319 8.55971 10.4227L8.86304 10.363C8.90146 10.3537 8.93702 10.3349 8.96623 10.3082C8.9954 10.2815 9.01722 10.2478 9.03004 10.2096C9.04287 10.1713 9.04628 10.1296 9.04002 10.0888V9.0602C9.0344 8.87654 9.09298 8.69758 9.20721 8.5532C9.32144 8.40882 9.48385 8.30846 9.66304 8.2691L12.8704 7.70506C13.6913 7.57293 14.413 8.00429 14.7431 8.7547C14.807 8.90245 14.8476 9.05969 14.8633 9.22029C14.8789 9.38088 14.8696 9.5432 14.8356 9.70092C14.8016 9.85864 14.7434 10.0095 14.664 10.1466C14.5846 10.2836 14.4849 10.4047 14.3693 10.5043C14.3323 10.5379 14.3037 10.5795 14.286 10.6259C14.2684 10.6723 14.262 10.7221 14.2675 10.7712L14.2811 10.9089C14.2872 10.9663 14.3098 11.0205 14.346 11.0635C14.3822 11.1066 14.4301 11.1363 14.4829 11.1486C14.5358 11.161 14.5911 11.1555 14.6404 11.1327C14.6897 11.1099 14.7303 11.0711 14.7557 11.0225C14.9523 10.7187 15.0808 10.3781 15.1337 10.0243C15.1865 9.67041 15.1625 9.31008 15.0628 8.96717C15.0233 8.6848 14.9393 8.41097 14.8144 8.15375H15.9138ZM9.62235 13.5889L12.8364 13.0249C13.0156 12.9855 13.178 12.8851 13.2922 12.7407C13.4064 12.5964 13.465 12.4174 13.4594 12.2337C13.4538 12.0501 13.3843 11.8747 13.2618 11.7372C13.1392 11.5997 12.9713 11.5084 12.7904 11.4792C12.7517 11.4711 12.7121 11.4711 12.6733 11.4793C12.6346 11.4875 12.5979 11.5036 12.5657 11.527C12.5334 11.5504 12.5063 11.5804 12.4862 11.6151C12.4661 11.6499 12.4535 11.6885 12.4492 11.7284L12.4356 11.8661C12.4301 11.9151 12.4136 11.9619 12.3875 12.0031C12.3614 12.0442 12.3264 12.0784 12.2855 12.1028C12.2446 12.1273 12.1988 12.1413 12.152 12.1439C12.1052 12.1464 12.0583 12.1374 12.0148 12.1175L11.7115 11.9656C11.6685 11.9456 11.6216 11.9353 11.5743 11.9353C11.527 11.9353 11.4801 11.9456 11.4371 11.9656L11.1339 12.1175C11.0904 12.1374 11.0435 12.1464 10.9967 12.1439C10.9499 12.1413 10.9041 12.1273 10.8632 12.1028C10.8223 12.0784 10.7873 12.0442 10.7612 12.0031C10.7351 11.9619 10.7186 11.9151 10.7131 11.8661L10.6995 11.7284C10.6951 11.6885 10.6826 11.6499 10.6625 11.6151C10.6423 11.5804 10.6153 11.5504 10.583 11.527C10.5507 11.5036 10.514 11.4875 10.4753 11.4793C10.4366 11.4711 10.397 11.4711 10.3582 11.4792C10.1774 11.5084 10.0095 11.5997 9.88694 11.7372C9.76442 11.8747 9.69493 12.0501 9.68931 12.2337C9.68369 12.4174 9.74226 12.5964 9.85649 12.7407C9.97071 12.8851 10.1331 12.9855 10.3123 13.0249L13.5264 13.5889C13.9261 13.6721 14.2873 13.8785 14.542 14.1745C14.7966 14.4704 14.9303 14.8421 14.9186 15.2221C14.9069 15.602 14.7506 15.9656 14.4782 16.2474C14.2058 16.5292 13.8328 16.7165 13.432 16.7789L10.2188 17.343C9.39793 17.4751 8.67627 17.0437 8.34613 16.2933C8.28224 16.1456 8.24166 15.9883 8.22603 15.8277C8.21041 15.6671 8.21987 15.5048 8.2539 15.3471C8.28793 15.1894 8.3461 15.0385 8.42551 14.9014C8.50493 14.7644 8.60461 14.6433 8.72024 14.5438C8.75723 14.5102 8.78585 14.4686 8.80349 14.4222C8.82113 14.3757 8.82746 14.3259 8.82198 14.2768L8.80837 14.1392C8.80227 14.0817 8.77972 14.0275 8.74347 13.9845C8.70723 13.9414 8.65937 13.9116 8.60652 13.8993C8.5537 13.8869 8.49839 13.8925 8.44908 13.9152C8.39977 13.938 8.35918 13.9768 8.3338 14.0254C8.13722 14.3293 8.00875 14.6698 7.95586 15.0236C7.90298 15.3775 7.92698 15.7379 8.02671 16.0808C8.06617 16.3631 8.15024 16.6369 8.27504 16.8942C8.92549 17.872 10.0973 18.3974 11.3502 18.1849L14.5576 17.6209C14.9572 17.5377 15.3185 17.3313 15.5731 17.0354C15.8278 16.7394 15.9615 16.3677 15.9498 15.9878C15.9382 15.6078 15.7819 15.2442 15.5094 14.9624C15.237 14.6807 14.8641 14.4934 14.4632 14.4309L11.2501 13.8669C10.4292 13.7347 9.70756 14.1661 9.37742 14.9166C9.31354 15.0642 9.27296 15.2215 9.25733 15.3821C9.24171 15.5427 9.25117 15.705 9.2852 15.8627C9.31923 16.0204 9.3774 16.1713 9.45681 16.3084C9.53623 16.4454 9.63591 16.5665 9.75154 16.666C9.78853 16.6997 9.81716 16.7412 9.8348 16.7877C9.85243 16.8341 9.85877 16.884 9.85329 16.9331L9.83968 17.0708C9.83358 17.1282 9.81103 17.1824 9.77478 17.2255C9.73854 17.2685 9.69068 17.2983 9.63783 17.3106C9.585 17.323 9.52969 17.3174 9.48038 17.2947C9.43108 17.2719 9.39049 17.2331 9.36511 17.1845C9.16853 16.8807 9.04006 16.5401 8.98717 16.1863C8.93429 15.8324 8.95829 15.472 9.05802 15.1291C9.09749 14.8468 9.18155 14.573 9.30635 14.3157C9.95681 13.3379 11.1286 12.8125 12.3815 13.025L13.4809 13.025C12.8305 14.0028 11.6587 14.5282 10.4058 14.3157L9.62235 13.5889Z" fill="white"/>
+          </svg>
+          <h3 class="ml-2 text-lg font-medium text-gray-900">Svelte</h3>
+        </div>
+        <p class="text-gray-600">Build highly efficient, compiled applications with Svelte's unique approach to UI development.</p>
+      </div>
+      
+      <div class="rounded-lg border border-gray-200 bg-white p-6">
+        <div class="flex items-center mb-4">
+          <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none">
+            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#9333EA"/>
+            <path d="M11.2151 6L7 12.6271H9.23596L7 18.5L14.8468 11.1025H11.6995L13.7662 6H11.2151Z" fill="white"/>
+          </svg>
+          <h3 class="ml-2 text-lg font-medium text-gray-900">Astro</h3>
+        </div>
+        <p class="text-gray-600">Build faster websites with less client-side JavaScript using Astro's unique island architecture.</p>
+      </div>
+    </div>
+    
+    <h2>Styling Solutions</h2>
+    
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 mb-8">
+      <div class="rounded-lg border border-gray-200 bg-white p-6">
+        <h3 class="text-lg font-medium text-gray-900 mb-2">CSS Frameworks</h3>
+        <ul class="space-y-2 text-gray-600">
+          <li class="flex items-center">
+            <svg class="h-5 w-5 text-primary-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>TailwindCSS</span>
+          </li>
+          <li class="flex items-center">
+            <svg class="h-5 w-5 text-primary-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>Bootstrap</span>
+          </li>
+          <li class="flex items-center">
+            <svg class="h-5 w-5 text-primary-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>Bulma</span>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="rounded-lg border border-gray-200 bg-white p-6">
+        <h3 class="text-lg font-medium text-gray-900 mb-2">CSS-in-JS</h3>
+        <ul class="space-y-2 text-gray-600">
+          <li class="flex items-center">
+            <svg class="h-5 w-5 text-primary-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>Styled Components</span>
+          </li>
+          <li class="flex items-center">
+            <svg class="h-5 w-5 text-primary-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>Emotion</span>
+          </li>
+          <li class="flex items-center">
+            <svg class="h-5 w-5 text-primary-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>CSS Modules</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <h2>Backend Technologies</h2>
+    
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 mb-8">
+      <div class="rounded-lg border border-gray-200 bg-white p-6">
+        <h3 class="text-lg font-medium text-gray-900 mb-2">Databases</h3>
+        <ul class="space-y-2 text-gray-600">
+          <li class="flex items-center">
+            <svg class="h-5 w-5 text-primary-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>PostgreSQL</span>
+          </li>
+          <li class="flex items-center">
+            <svg class="h-5 w-5 text-primary-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>MongoDB</span>
+          </li>
+          <li class="flex items-center">
+            <svg class="h-5 w-5 text-primary-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>SQLite</span>
+          </li>
+          <li class="flex items-center">
+            <svg class="h-5 w-5 text-primary-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>Supabase</span>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="rounded-lg border border-gray-200 bg-white p-6">
+        <h3 class="text-lg font-medium text-gray-900 mb-2">API Technologies</h3>
+        <ul class="space-y-2 text-gray-600">
+          <li class="flex items-center">
+            <svg class="h-5 w-5 text-primary-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>REST</span>
+          </li>
+          <li class="flex items-center">
+            <svg class="h-5 w-5 text-primary-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>GraphQL</span>
+          </li>
+          <li class="flex items-center">
+            <svg class="h-5 w-5 text-primary-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>tRPC</span>
+          </li>
+          <li class="flex items-center">
+            <svg class="h-5 w-5 text-primary-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>WebSockets</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <h2>Deployment</h2>
+    <p>
+      Thunder supports deployment to a variety of platforms, making it easy to get your application into production.
+    </p>
+    
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-3 mb-8">
+      <div class="rounded-lg border border-gray-200 bg-white p-6 flex items-center">
+        <svg class="h-8 w-8 text-black mr-3" viewBox="0 0 24 24" fill="none">
+          <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="black"/>
+          <path d="M8 19L17 5L9 5L4 19L8 19Z" fill="white"/>
+        </svg>
+        <span class="text-gray-900 font-medium">Vercel</span>
+      </div>
+      
+      <div class="rounded-lg border border-gray-200 bg-white p-6 flex items-center">
+        <svg class="h-8 w-8 text-teal-500 mr-3" viewBox="0 0 24 24" fill="none">
+          <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#00AD9F"/>
+          <path d="M15.9842 9.24069L15.9759 9.26736C15.2534 11.3344 14.1912 13.238 12.8326 14.9087L12.8284 14.9087L12.7493 15.0132C12.7035 15.071 12.6552 15.1269 12.6058 15.1827L12.5339 15.2664C12.5339 15.2664 12.5339 15.2664 12.5339 15.2664C11.9332 15.9764 11.0563 16.5767 10 16.9552V16.9552L9.51231 17.1245V9.02311L8.03223 12.0755L7 12.0747L9.01536 7.00043H10.0092H10.9891L13 12.0747L11.9669 12.0755L10.4868 9.0239V19C11.1453 18.8224 11.7523 18.4936 12.2486 18.0394L12.2712 18.0394L12.4439 17.887C14.1075 16.3888 15.3766 14.5342 16.1579 12.4779H13.4649V11.4721H17.0214V12.4779H16.9983C16.2536 14.8223 14.8538 16.9016 12.9535 18.5006C14.0537 17.8462 14.987 16.937 15.675 15.8514C16.8436 13.8901 17.5594 11.6878 17.7674 9.40981V9.24069H15.9842Z" fill="white"/>
+        </svg>
+        <span class="text-gray-900 font-medium">Netlify</span>
+      </div>
+      
+      <div class="rounded-lg border border-gray-200 bg-white p-6 flex items-center">
+        <svg class="h-8 w-8 text-orange-500 mr-3" viewBox="0 0 24 24" fill="none">
+          <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#FF9900"/>
+          <path d="M8.26374 14.031H15.7363C16.0877 14.031 16.3164 13.8023 16.3164 13.4509V7.61879C16.3164 7.26738 16.0877 7.03867 15.7363 7.03867H8.26374C7.91233 7.03867 7.68361 7.26738 7.68361 7.61879V13.4509C7.68361 13.8023 7.91233 14.031 8.26374 14.031ZM8.2347 16.8023H15.7073C16.9163 16.8023 17.3805 16.0778 17.3805 14.7852V6.29004C17.3805 4.99746 16.9163 4.27296 15.7073 4.27296H8.2347C7.0257 4.27296 6.5615 4.99746 6.5615 6.29004V14.7852C6.5615 16.0778 7.0257 16.8023 8.2347 16.8023Z" fill="white"/>
+          <path d="M13.7 19.5H10.3C10.134 19.5 10 19.634 10 19.8C10 19.966 10.134 20.1 10.3 20.1H13.7C13.866 20.1 14 19.966 14 19.8C14 19.634 13.866 19.5 13.7 19.5Z" fill="white"/>
+        </svg>
+        <span class="text-gray-900 font-medium">AWS Amplify</span>
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 mt-8">
+      <h3 class="text-lg font-medium text-gray-900 mb-4">Need to use a technology not listed here?</h3>
+      <p class="text-gray-600 mb-4">
+        If you need to use a technology that isn't listed here, don't worry! Thunder is designed to be flexible and can work with most modern web technologies. Contact our support team for assistance with integrating custom technologies.
+      </p>
+      <a href="/community/contact" class="inline-flex items-center text-primary-700 font-medium hover:text-primary-800">
+        Contact support
+        <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</Layout>
